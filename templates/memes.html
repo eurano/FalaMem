@@ -1,0 +1,20 @@
+﻿﻿{% extends "layout.html" %}
+
+{% block content %}
+
+{% for mem in memes %}
+
+<article class="media content-section">
+    <div class="media-body">
+        <div class="article-metadata">
+            <h2><a class="article-title" href="{{ url_for('meme', id = mem.id) }}">{{ mem.title }}</a></h2>
+            <img src="data:image/jpg;base64,{{ mem.img | b64encode }}" />
+        </div>
+        <p class="article-content">{{ mem.filename }}</p>
+    </div>
+
+</article>
+
+{% endfor %}
+
+{% endblock content %}

@@ -1,0 +1,11 @@
+Flask>=1.1
+pyodbc
+SQLAlchemy
+sqlalchemy_utils
+passlib
+Flask-Session
+Flask-WTF
+WTForms==2.3.3
+flask_login
+jinja2
+jinja2-base64-filters
