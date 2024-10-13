@@ -1,1 +1,1 @@
-Basic ORM flask basic CRUD project.
+ ORM flask CRUD project (meme hosting).
